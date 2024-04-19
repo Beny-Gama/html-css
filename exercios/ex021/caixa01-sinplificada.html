@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>modelo de Caixa - Sinplificada ( shorthand)</title>
+    <style>
+        h1 { /* h1 é um exemplo do tipo: box-level  */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            /*cria um vão entre a borda e o centro */
+            padding: 10px 10px 10px 10px;
+            /* ou se todas forem iquais: padding: 10px; informe somente um dos valores */
+
+            /* cria uma margem final
+            auto = centraliza a caixa */
+            margin: 20px auto 40px auto;
+
+            /* centraliza a caixa
+            margin: auto;*/
+
+            /* densenha dentro da margem final  */
+
+            outline: 5px dashed salmon;
+
+        }
+        a{/* "a" é um exemplo do tipo: inline-level  */
+
+            display: inline-block;
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrfos também são exeplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona.</p>
+
+</body>
+</html>
