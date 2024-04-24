@@ -6,7 +6,41 @@
     <title>Teste de Formulario</title>
 </head>
 <body>
-    
+    <h1>Exemplo de Fromulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p>
+        <label for="iest">estado</label>
+        <select name="estado" id="iest">
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option data="PE" type="Pernambuco"></option>
+                <option value="RM">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalsit id="lstprof">
+            <option value="ADM">Adimistrador</option>
+            <option value="CONT">Contador</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+        </datalsit>
+    </p>
+
+    <p>
+        <!-- Para a mesagem longes e e recomentdado usar o method="post" no começo do arquivo -->
+        <label for="imsg">Mensagem:</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
     
 </body>
 </html>
