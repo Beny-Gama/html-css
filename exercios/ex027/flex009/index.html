@@ -9,12 +9,16 @@
             background-color: lightsalmon;
             flex-direction: row;
             display: flex;
+            flex-flow: row wrap;
+
         }
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            padding: auto;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 0;
         }
     </style>
 </head>
@@ -22,10 +26,10 @@
     <div class="conteiner">
         <div class="item">A</div>
         <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item">conteudo</div>
         <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item">conteudo grande</div>
+        <div class="item">contedudo mais grande ainda</div>
         <div class="item">G</div>
     </div>
 </body>
